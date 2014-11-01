@@ -8,7 +8,8 @@
     "url": "https://github.com/jaramir/cordova-helloworld.git"
   },
   "dependencies": {
-    "cordova": "4.0.0"
+    "cordova": "4.0.0",
+    "node-static": "^0.7.6"
   },
   "license": "MIT"
 }

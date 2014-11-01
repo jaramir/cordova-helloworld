@@ -7,6 +7,9 @@ ANT_HOME = apache-ant-1.9.4
 PATH := $(NODE_BIN):$(ANDROID_HOME)/tools:$(ANT_HOME)/bin:$(PATH)
 export ANDROID_HOME
 
+run:
+	cordova run android
+
 build: $(filter-out $(wildcard $(ANT_HOME)), $(ANT_HOME))
 	cordova build
 
@@ -15,6 +18,9 @@ emulate:
 
 avd:
 	android create avd --name Cordova19 --target android-19 --abi default/armeabi-v7a
+
+serve:
+	static www
 
 ## cd ~/.cordova/lib/npm_cache/cordova-android/3.6.4/package/bin
 ## npm install shelljs
