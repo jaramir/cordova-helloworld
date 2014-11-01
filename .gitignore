@@ -1,0 +1,6 @@
+*~
+apache-*
+android-*
+*.log
+node_modules
+platforms

@@ -1,0 +1,14 @@
+{
+  "name": "cordova-helloworld",
+  "version": "0.0.0",
+  "author": "Francesco Gigli <jaramir@gmail.com>",
+  "description": "HelloCordovaWorld",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaramir/cordova-helloworld.git"
+  },
+  "dependencies": {
+    "cordova": "4.0.0"
+  },
+  "license": "MIT"
+}
