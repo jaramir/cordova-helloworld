@@ -34,7 +34,7 @@ body {
 }
 
 .piece {
-    background-image: url(../img/test-tg.png);
+    background-image: url(../img/test.png);
     width: 75px;
     height: 75px;
     position: absolute;
