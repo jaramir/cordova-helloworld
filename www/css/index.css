@@ -9,37 +9,49 @@ body {
     font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 12px;
-    background-color: black;
+    background-image: url(../img/connect.png);
+    background-repeat: repeat;
 }
 
 .puzzle {
     width: 300px;
     height: 300px;
-    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 }
 
+@media only screen and (min-device-width : 320px) and (orientation: portrait) {
+    .puzzle {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (orientation: landscape) {
+    .puzzle {
+        margin-top: 10px;
+    }
+}
+
 .piece {
-    background-image: url(../img/test.png);
+    background-image: url(../img/test-tg.png);
     width: 75px;
     height: 75px;
     position: absolute;
 }
 
-.piece-1  { top:   0px; left:   0px; background-position:    0px    0px; }
-.piece-2  { top:   0px; left:  75px; background-position:  -75px    0px; }
-.piece-3  { top:   0px; left: 150px; background-position: -150px    0px; }
-.piece-4  { top:   0px; left: 225px; background-position: -225px    0px; }
-.piece-5  { top:  75px; left:   0px; background-position:    0px  -75px; }
-.piece-6  { top:  75px; left:  75px; background-position:  -75px  -75px; }
-.piece-7  { top:  75px; left: 150px; background-position: -150px  -75px; }
-.piece-8  { top:  75px; left: 225px; background-position: -225px  -75px; }
-.piece-9  { top: 150px; left:   0px; background-position:    0px -150px; }
-.piece-10 { top: 150px; left:  75px; background-position:  -75px -150px; }
-.piece-11 { top: 150px; left: 150px; background-position: -150px -150px; }
-.piece-12 { top: 150px; left: 225px; background-position: -225px -150px; }
-.piece-13 { top: 225px; left:   0px; background-position:    0px -225px; }
-.piece-14 { top: 225px; left:  75px; background-position:  -75px -225px; }
-.piece-15 { top: 225px; left: 150px; background-position: -150px -225px; }
+#piece-1  { background-position:    0px    0px; }
+#piece-2  { background-position:  -75px    0px; }
+#piece-3  { background-position: -150px    0px; }
+#piece-4  { background-position: -225px    0px; }
+#piece-5  { background-position:    0px  -75px; }
+#piece-6  { background-position:  -75px  -75px; }
+#piece-7  { background-position: -150px  -75px; }
+#piece-8  { background-position: -225px  -75px; }
+#piece-9  { background-position:    0px -150px; }
+#piece-10 { background-position:  -75px -150px; }
+#piece-11 { background-position: -150px -150px; }
+#piece-12 { background-position: -225px -150px; }
+#piece-13 { background-position:    0px -225px; }
+#piece-14 { background-position:  -75px -225px; }
+#piece-15 { background-position: -150px -225px; }
